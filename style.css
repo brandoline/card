@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartaoApresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+    position: relative;
+}
+
+.cartaoApresentacao::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(255, 201, 216);
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 201, 216);
+    padding: 3px;
+    margin: 10px;
+}
+
+.image .imageProf {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.cartaoApresentacao .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.texto .nome {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.texto .profissao {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.cartaoApresentacao .media {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: rgb(255, 201, 216);
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.media .link:hover {
+    transform: scale(1.2);
+}
+
+.buttons .button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 20px 10px;
+    padding: 8px 24px;
+    background-color: rgb(255, 201, 216);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttons .button:hover {
+    background-color: rgb(235, 182, 197);
+    transform: scale(0.95);
+}
+
+.cartaoApresentacao .dados {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.dados .inf {
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
